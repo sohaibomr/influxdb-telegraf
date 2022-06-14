@@ -1,4 +1,15 @@
-# InfluxDBv2_Telegraf_Docker
- Run InfluxDB 2.0 and Telegraf in containers
+# InfluxDBv2 Telegraf Docker
 
- To learn more please read this blog on [Running InfluxDB 2.0 and Telegraf Using Docker](https://www.influxdata.com/blog/running-influxdb-2-0-and-telegraf-using-docker/)
+ Run InfluxDB 2.0 and Telegraf in containers, with http input plugin configured.
+
+## How to Run
+
+1. `docker-compose up`
+2. access influxdb ui on `localhost:8086` myusername/passwordpassword/password
+
+ Credit: Inspired from [this](https://github.com/InfluxCommunity/InfluxDBv2_Telegraf_Docker) by [Anaisdg](https://github.com/Anaisdg)
+
+Important links:
+
+- [To read more about http plugin](https://github.com/influxdata/telegraf/blob/release-1.22/plugins/inputs/http/README.md)
+- [To read more about http json parser](https://github.com/influxdata/telegraf/tree/release-1.22/plugins/parsers/json_v2)
